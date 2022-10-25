@@ -38,7 +38,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
 def create_deploy(wallet: str, address: str, amount: str) -> None:
     if "deploy" not in os.listdir():
         os.mkdir("deploy")
-    with open(f"deploy/deploy.ts", "w") as file:
+    with open(f"deploy/deploy.ts", "w+") as file:
         file.writelines(sendTo(wallet, address, amount))
 
 
