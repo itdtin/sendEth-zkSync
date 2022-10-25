@@ -53,4 +53,4 @@ if __name__ == '__main__':
 
     stream = os.popen('yarn hardhat deploy-zksync')
     output = stream.read()
-    output
+    print(output)
